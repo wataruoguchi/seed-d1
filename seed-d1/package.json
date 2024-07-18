@@ -1,0 +1,36 @@
+{
+  "name": "seed-d1",
+  "version": "0.0.1",
+  "description": "Workaround for seeding against local Cloudflare D1 database.",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "prebuild": "rm -rf dist",
+    "postbuild": "tsc --project tsconfig.type.json --outDir dist"
+  },
+  "dependencies": {
+    "miniflare": "^3.20240712.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240712.0",
+    "@liuli-util/vite-plugin-node": "^0.9.0",
+    "@types/node": "^20.14.11",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4"
+  },
+  "packageManager": "pnpm@8.6.10+sha1.98fe2755061026799bfa30e7dc8d6d48e9c3edf0",
+  "license": "MIT"
+}

@@ -2,6 +2,14 @@
   "name": "seed-d1",
   "version": "0.0.1",
   "description": "Workaround for seeding against local Cloudflare D1 database.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wataruoguchi/seed-d1.git"
+  },
+  "homepage": "https://github.com/wataruoguchi/seed-d1/tree/main/seed-d1",
+  "bugs": {
+    "url": "https://github.com/wataruoguchi/seed-d1/issues"
+  },
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -19,7 +27,8 @@
   "scripts": {
     "build": "vite build",
     "prebuild": "rm -rf dist",
-    "postbuild": "tsc --project tsconfig.type.json --outDir dist"
+    "postbuild": "tsc --project tsconfig.type.json --outDir dist",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "miniflare": "^3.20240712.0"
@@ -32,5 +41,11 @@
     "vite": "^5.3.4"
   },
   "packageManager": "pnpm@8.6.10+sha1.98fe2755061026799bfa30e7dc8d6d48e9c3edf0",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "cloudflare",
+    "d1",
+    "seed",
+    "orm"
+  ]
 }

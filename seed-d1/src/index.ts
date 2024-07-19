@@ -1,1 +1,1 @@
-export { seeder } from "./seeder";
+export { seeder } from "./seeder.ts";

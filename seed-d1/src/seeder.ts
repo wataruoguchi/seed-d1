@@ -1,4 +1,4 @@
-import { GetQuery, queryGenerator } from "./query-generator";
+import { GetQuery, queryGenerator } from "./query-generator.ts";
 
 /**
  *

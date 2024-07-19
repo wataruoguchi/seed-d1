@@ -20,13 +20,13 @@ importers:
 
   seed-d1:
     dependencies:
+      '@cloudflare/workers-types':
+        specifier: ^4.20240718.0
+        version: 4.20240718.0
       miniflare:
         specifier: ^3.20240712.0
         version: 3.20240712.0
     devDependencies:
-      '@cloudflare/workers-types':
-        specifier: ^4.20240712.0
-        version: 4.20240712.0
       '@liuli-util/vite-plugin-node':
         specifier: ^0.9.0
         version: 0.9.0(@types/node@20.14.11)(rollup@4.18.1)(typescript@5.2.2)(vite@5.3.4)
@@ -114,9 +114,9 @@ packages:
     dev: false
     optional: true
 
-  /@cloudflare/workers-types@4.20240712.0:
-    resolution: {integrity: sha512-C+C0ZnkRrxR2tPkZKAXwBsWEse7bWaA7iMbaG6IKaxaPTo/5ilx7Ei3BkI2izxmOJMsC05VS1eFUf95urXzhmw==}
-    dev: true
+  /@cloudflare/workers-types@4.20240718.0:
+    resolution: {integrity: sha512-7RqxXIM9HyhjfZ9ztXjITuc7mL0w4s+zXgypqKmMuvuObC3DgXutJ3bOYbQ+Ss5QbywrzWSNMlmGdL/ldg/yZg==}
+    dev: false
 
   /@cspotcode/source-map-support@0.8.1:
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
